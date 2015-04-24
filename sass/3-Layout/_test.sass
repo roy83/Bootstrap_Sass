@@ -1,0 +1,58 @@
+/* ------------------------------------ */
+/* =Testing */
+/* ------------------------------------ */
+
+.cont
+	@extend .container
+
+	@media (min-width: $screen-sm-min) 
+		width: $container-sm
+	
+	@media (min-width: $screen-md-min) 
+		width: $container-md
+	
+	@media (min-width: $screen-lg-min)
+		width: $container-lg
+
+	.wrapper
+		@extend .row
+
+		.left
+			@extend .col-md-4
+			background: pink
+
+		.right
+			@extend .col-md-8
+			background: orange
+
+	.offset
+		@extend .col-md-4
+		+make-sm-column-offset(4)
+
+
+// .cont
+// 	@include container-fixed()
+
+// 	@media (min-width: $screen-sm-min) 
+// 		width: $container-sm
+	
+// 	@media (min-width: $screen-md-min) 
+// 		width: $container-md
+	
+// 	@media (min-width: $screen-lg-min)
+// 		width: $container-lg
+
+// 	.wrapper
+// 		@include make-row()
+
+// 		.left
+// 			+make-sm-column(4)
+// 			background: pink
+
+// 		.right
+// 			+make-sm-column(8)
+// 			background: orange
+
+// 	.offset
+// 		+make-sm-column(4)
+// 		+make-sm-column-offset(4)
