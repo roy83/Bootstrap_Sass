@@ -1,0 +1,22 @@
+/* ------------------------------------ */
+/* =USAGE */
+/* ------------------------------------ */
+
+.usage
+	@extend %light-block
+
+	ul
+		@extend .list-unstyled
+
+		li
+			line-height: 2.2
+			border-bottom: 1px solid #ccc
+
+			&:last-child
+				border-bottom: none
+
+			i
+				margin-right: 10px
+
+	.device
+		@extend .img-responsive

@@ -1,0 +1,60 @@
+/* ------------------------------------ */
+/* =HEADER-MAIN */
+/* ------------------------------------ */
+
+/* ------------------------------------ */
+/* =NAV-MAIN */
+/* ------------------------------------ */
+
+.nav-main
+	@extend .navbar 
+	@extend .navbar-inverse 
+	@extend .navbar-fixed-top
+
+	.logo-text
+		@extend .navbar-brand
+
+.navbar
+	width: 90%
+	margin-top: 30px
+	border-width: 1px
+	@extend %pos-center
+
+/* ------------------------------------ */
+/* =SHOWCASE */
+/* ------------------------------------ */
+
+.showcase
+	height: 400px
+	background: url("../img/header-bg.jpg") no-repeat top center
+	background-size: cover
+
+	.showcase-content
+		@extend .container
+		@extend .text-center
+		padding: 120px 15px 0
+
+		h1
+			color: $primary-color
+
+/* ------------------------------------ */
+/* =SEARCH */
+/* ------------------------------------ */
+
+.search
+	background-color: $light-color
+
+	input[type="search"]
+		height: 50px
+		width: 80%
+		border: 2px solid $primary-color
+		padding-left: 10px
+		padding-bottom: 10px
+		font-size: 18px
+
+	button[type="submit"]
+		background: none
+		border: none
+		padding: 0
+		vertical-align: top
+		margin-left: -4px

@@ -1,0 +1,19 @@
+/* ------------------------------------ */
+/* =FOUR-BLOCKS */
+/* ------------------------------------ */
+
+.four-blocks
+	> div
+		@extend .container
+
+		> div
+			@extend .row
+
+			>div
+				@extend .col-md-3
+
+	padding-top: 0
+	@extend .text-center
+
+	.block-light
+		@extend %light-block
